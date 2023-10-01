@@ -8,7 +8,6 @@ iEco is an Android mobile app developed to promote eco-awareness among the stude
 - Event Calendar: Browse events in a calendar view, making it easy to plan your participation.
 - Articles: Access articles created by the app administrators to stay informed about eco-friendly practices.
 - FAQs: Get answers to frequently asked questions about environmental topics.
-- About Us: Learn more about the app and its mission.
 - School Info: Find important information about Siquijor Provincial Science High School.
 
 ### Admin Interface
