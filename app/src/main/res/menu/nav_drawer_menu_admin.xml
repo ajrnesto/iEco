@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/miManageEvents"
+            android:title="Manage Events"
+            android:icon="@drawable/calendar_24" />
+
+        <item android:id="@+id/miManageLearnArticles"
+            android:icon="@drawable/book_24"
+            android:title="Manage Learn Articles" />
+
+        <item android:id="@+id/miManageFaq"
+            android:icon="@drawable/faq_24"
+            android:title="Manage FAQs" />
+    </group>
+</menu>

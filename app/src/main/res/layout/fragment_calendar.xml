@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMenu"
+            style="@style/IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:icon="@drawable/angle_left_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/patrickhand_regular"
+            android:text="iEco Calendar"
+            android:textColor="?colorPrimary"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnMenu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnMenu" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPrevious"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/angle_left_24"
+            app:layout_constraintBottom_toBottomOf="@+id/tvMonthYear"
+            app:layout_constraintStart_toStartOf="@+id/calendarView"
+            app:layout_constraintTop_toTopOf="@+id/tvMonthYear" />
+
+        <TextView
+            android:id="@+id/tvMonthYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="?colorSecondary"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMenu"
+            tools:text="January 2023" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNext"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/angle_right_24"
+            app:layout_constraintBottom_toBottomOf="@+id/tvMonthYear"
+            app:layout_constraintEnd_toEndOf="@+id/calendarView"
+            app:layout_constraintTop_toTopOf="@+id/tvMonthYear" />
+
+        <com.kizitonwose.calendar.view.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:cv_dayViewResource="@layout/calendar_day"
+            app:cv_monthHeaderResource="@layout/calendar_day_titles_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMonthYear" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:cardBackgroundColor="?colorSecondary"
+            app:cardCornerRadius="8dp"
+            app:strokeWidth="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvSelectedDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/surface_light_gray"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="January 1, 2023" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvEvents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSelectedDate" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

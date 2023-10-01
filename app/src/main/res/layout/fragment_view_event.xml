@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgEvent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintDimensionRatio="3:2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEventName"
+                app:riv_corner_radius="8dp" />
+
+            <TextView
+                android:id="@+id/tvEventName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textAlignment="center"
+                android:textColor="?colorPrimary"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSchedule"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed risus non." />
+
+            <TextView
+                android:id="@+id/tvSchedule"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/poppins_light"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="JANUARY 4, 2023 7:30 PM" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="12dp"
+                android:fontFamily="@font/poppins_regular"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend varius tempor. Donec mattis diam ultricies nisl tempus blandit. Integer placerat massa erat, id faucibus odio finibus id. Nam quis malesuada tortor, at tempor est. Nam facilisis scelerisque felis id feugiat. Aenean faucibus diam eleifend mattis lobortis. Nunc sollicitudin ligula nec nisi tempor pulvinar. Quisque ornare mollis dictum. Duis non nulla sit amet metus finibus consequat. In consectetur sapien sit amet sollicitudin porttitor. Vivamus ex nisl, mollis et tristique id, cursus eget quam. Proin pulvinar leo odio, eu ultricies dolor vestibulum eget. Vestibulum et aliquet erat. Curabitur bibendum tortor orci, a tristique urna egestas nec. Curabitur molestie ipsum sed turpis malesuada, vel dapibus diam scelerisque. Vivamus in leo imperdiet, porta urna vitae, sagittis lorem.\n\nIn eu dapibus metus. Aenean id euismod massa. Proin in nulla felis. Sed quis ex porta, tincidunt augue quis, convallis erat. Vivamus ultrices, odio vitae imperdiet lacinia, erat elit volutpat urna, nec lobortis dolor leo ac tortor. In hac habitasse platea dictumst. Vivamus at turpis pellentesque, convallis magna nec, egestas magna. Nulla et leo vitae nisi congue gravida ac quis felis. Pellentesque cursus placerat eros, ut interdum mauris tempus nec.\n\nSed eros libero, rhoncus sed neque sed, eleifend condimentum arcu. Pellentesque vitae ex ultrices mauris feugiat porta. Duis laoreet sed massa nec luctus. Nullam pretium neque sem. Donec purus nisl, dictum quis auctor non, molestie eu magna. Sed sollicitudin, nisl at pellentesque fringilla, metus ipsum feugiat mauris, eu vehicula justo ligula ut urna. Sed elementum sapien sit amet rhoncus gravida. In suscipit porta erat, et ullamcorper urna pellentesque sed. Aenean id tincidunt nisi.\n\nMauris quis ligula pretium, euismod elit vel, accumsan ante. Sed placerat, massa non euismod suscipit, risus risus facilisis eros, condimentum vulputate ante enim eget urna. Fusce ornare, ipsum eget ultrices sodales, risus nunc blandit quam, id interdum purus nisi vitae sapien. Integer nec ipsum nec sem luctus suscipit. Phasellus in eros dignissim, condimentum sapien id, maximus diam. Nullam iaculis accumsan urna, non varius nibh pulvinar eu. Aliquam gravida purus interdum felis efficitur semper. Donec scelerisque justo in purus fermentum, sed lobortis purus tempor. Morbi aliquet diam in nisi lobortis, non posuere felis interdum."
+                android:textSize="16sp"
+                android:justificationMode="inter_word"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgEvent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

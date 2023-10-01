@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "696899706915",
+    "project_id": "ieco-37720",
+    "storage_bucket": "ieco-37720.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696899706915:android:2dff697617431ec0161196",
+        "android_client_info": {
+          "package_name": "com.ieco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696899706915-1t534ot0g04r785mg2pvvqlpbnrsph23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCj0PRjWPr5cSaWP3f9n9bo-iRn-U6EdKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696899706915-1t534ot0g04r785mg2pvvqlpbnrsph23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Article Photo"
+                android:textColor="?colorPrimary"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgArticle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:riv_corner_radius="8dp"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintDimensionRatio="3:2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSelectImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Select Image"
+                android:textColor="@color/surface_beige"
+                app:backgroundTint="?colorSecondary"
+                app:cornerRadius="8dp"
+                app:icon="@drawable/picture_24"
+                app:iconTint="@color/surface_beige"
+                app:layout_constraintEnd_toEndOf="@+id/imgArticle"
+                app:layout_constraintStart_toStartOf="@+id/imgArticle"
+                app:layout_constraintTop_toBottomOf="@+id/imgArticle" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Article Title"
+                android:textColor="?colorPrimary"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSelectImage" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilArticleName"
+                style="@style/iEco.TIL.NoStroke"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:hint="Article Name"
+                app:boxStrokeErrorColor="@color/error_terracotta"
+                app:errorIconTint="@color/error_terracotta"
+                app:errorTextColor="@color/error_terracotta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etArticleName"
+                    style="@style/iEco.TIET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Title"
+                    android:inputType="textCapSentences" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Body Content"
+                android:textColor="?colorPrimary"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tilArticleName" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilContent"
+                style="@style/iEco.TIL.NoStroke"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                app:boxStrokeErrorColor="@color/error_terracotta"
+                app:errorIconTint="@color/error_terracotta"
+                app:errorTextColor="@color/error_terracotta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etContent"
+                    style="@style/iEco.TIET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Content"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:minLines="3" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSaveArticle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Save Article"
+                android:textColor="@color/surface_beige"
+                app:backgroundTint="?colorPrimary"
+                app:cornerRadius="8dp"
+                app:icon="@drawable/save_24"
+                app:iconGravity="textStart"
+                app:iconTint="@color/surface_beige"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tilContent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Delete Article"
+                android:textColor="@color/surface_beige"
+                app:backgroundTint="@color/error_terracotta"
+                app:cornerRadius="8dp"
+                app:icon="@drawable/trash_24"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:iconGravity="textStart"
+                app:iconTint="@color/surface_beige"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnSaveArticle"
+                app:layout_constraintTop_toBottomOf="@+id/tilContent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvProgress"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                tools:visibility="gone"
+                android:clickable="true"
+                app:cardCornerRadius="0dp"
+                app:rippleColor="@android:color/transparent"
+                app:cardBackgroundColor="@color/black_transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="8dp"
+                        app:cardBackgroundColor="@color/surface_light_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp">
+
+                        <com.google.android.material.progressindicator.CircularProgressIndicator
+                            android:id="@+id/progressBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:trackCornerRadius="16dp"
+                            tools:progress="50" />
+
+                        <TextView
+                            android:id="@+id/tvProgress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="(0%) Uploading article data..."
+                            android:textAlignment="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_italic"
+                            android:text="Do not this close window!"
+                            android:textAlignment="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvProgress" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+                    
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

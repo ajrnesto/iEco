@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/miHome"
+            android:title="Home"
+            android:icon="@drawable/home_24" />
+
+        <item android:id="@+id/miSchoolInformation"
+            android:icon="@drawable/school_24"
+            android:title="School Information" />
+
+        <item android:id="@+id/miFaq"
+            android:icon="@drawable/faq_24"
+            android:title="FAQ" />
+
+        <item android:id="@+id/miAboutUs"
+            android:icon="@drawable/file_user_24"
+            android:title="About Us" />
+
+        <item android:id="@+id/miLogin"
+            android:title="Admin Login"
+            android:icon="@drawable/user_24" />
+    </group>
+</menu>

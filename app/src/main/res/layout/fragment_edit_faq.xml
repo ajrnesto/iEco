@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Question"
+                android:textColor="?colorPrimary"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilQuestion"
+                style="@style/iEco.TIL.NoStroke"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                app:boxStrokeErrorColor="@color/error_terracotta"
+                app:errorIconTint="@color/error_terracotta"
+                app:errorTextColor="@color/error_terracotta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etQuestion"
+                    style="@style/iEco.TIET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Question"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:minLines="3" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Answer"
+                android:textColor="?colorPrimary"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tilQuestion" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilAnswer"
+                style="@style/iEco.TIL.NoStroke"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                app:boxStrokeErrorColor="@color/error_terracotta"
+                app:errorIconTint="@color/error_terracotta"
+                app:errorTextColor="@color/error_terracotta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAnswer"
+                    style="@style/iEco.TIET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Answer"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:minLines="3" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSaveFaq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Save Faq"
+                android:textColor="@color/surface_beige"
+                app:backgroundTint="?colorPrimary"
+                app:cornerRadius="8dp"
+                app:icon="@drawable/save_24"
+                app:iconGravity="textStart"
+                app:iconTint="@color/surface_beige"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tilAnswer" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Delete Faq"
+                android:textColor="@color/surface_beige"
+                app:backgroundTint="@color/error_terracotta"
+                app:cornerRadius="8dp"
+                app:icon="@drawable/trash_24"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:iconGravity="textStart"
+                app:iconTint="@color/surface_beige"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnSaveFaq"
+                app:layout_constraintTop_toBottomOf="@+id/tilAnswer" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCalendar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/calendar_24"
+            android:drawableTint="@color/surface_beige"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Calendar"
+            android:textSize="16sp"
+            app:backgroundTint="@color/secondary_green_olive"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/btnLearn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.3" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLearn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/book_24"
+            android:drawableTint="@color/surface_beige"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="16dp"
+            android:text="Learn"
+            android:textSize="16sp"
+            app:backgroundTint="@color/secondary_green_olive"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnCalendar"
+            app:layout_constraintTop_toTopOf="@+id/btnCalendar"
+            app:layout_constraintWidth_percent="0.3" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Upcoming Events"
+            android:textColor="?colorPrimary"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCalendar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvEvents"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="No upcoming events yet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rvEvents" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

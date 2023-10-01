@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.IEco" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_green_hunter</item>
+        <item name="colorPrimaryVariant">@color/primary_green_hunter</item>
+        <item name="colorOnPrimary">@color/surface_beige</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary_green_olive</item>
+        <item name="colorSecondaryVariant">@color/secondary_green_olive</item>
+        <item name="colorOnSecondary">@color/surface_beige</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/surface_beige</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowBackground">@color/surface_beige</item>
+        <!-- Customize your theme here. -->
+        <item name="android:listDivider">@color/surface_beige</item>
+    </style>
+
+    <style name="iEco.TimePicker" parent="ThemeOverlay.MaterialComponents.TimePicker">
+        <item name="android:amPmTextColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="IconButton" parent="Widget.Material3.Button.IconButton">
+        <item name="iconSize">28dp</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="iconTint">@color/surface_beige</item>
+        <item name="backgroundTint">@color/primary_green_hunter</item>
+    </style>
+
+    <style name="TitleTextAppearance">
+        <item name="fontFamily">@font/patrickhand_regular</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+</resources>
