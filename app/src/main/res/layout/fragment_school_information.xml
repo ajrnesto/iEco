@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/poppins_medium"
-            android:text=" izel.daugquidlat@deped.gov.ph"
+            android:text=" ****.***********@deped.gov.ph"
             android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@+id/appCompatImageView4"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
@@ -76,7 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/poppins_medium"
-            android:text=" Izel Quidlat"
+            android:text=" **** *******"
             android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@+id/appCompatImageView4"
             app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/poppins_medium"
-            android:text=" 09770875211"
+            android:text=" ***********"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/textView10"
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
