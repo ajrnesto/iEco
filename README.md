@@ -1,6 +1,6 @@
 # iEco - Eco Awareness App
 ## Overview
-iEco is an Android mobile app developed to promote eco-awareness among the students of Siquijor Provincial Science High School. The app's primary goal is to make information and awareness related to environmental activities and initiatives easily accessible to all students.
+iEco is an Android app developed to promote eco-awareness among the students of Siquijor Provincial Science High School. The app's primary goal is to make information and awareness related to environmental activities and initiatives easily accessible to all students.
 
 # Features
 ## Student Interface
